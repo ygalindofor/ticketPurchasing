@@ -10,3 +10,15 @@ function mostrarTotal(){
 function cancelar(){
     window.location.href = "index.html";
 }
+
+function mostrarCamposTarjeta(){
+    document.getElementById("camposTarjeta").style.display = "block";
+    document.getElementById("divSelectBancos").style.display = "none";
+    document.getElementById("pse").checked = false;
+}
+
+function mostrarSelectBancos(){
+    document.getElementById("divSelectBancos").style.display = "block";
+    document.getElementById("camposTarjeta").style.display = "none";
+    document.getElementById("tarjetas").checked = false;
+}

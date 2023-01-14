@@ -31,12 +31,28 @@
         <div class="card cardd" style="width: 40rem; margin-left: 20px; margin-top: 5px;">
             <div class="card-body">
                 <h5 class="card-title">Seleccione modo de pago</h5>
-                <p class="card-text">Tarjeta de Debito / Credito</p>
                 <div class="card" style="width: 30rem;">
-                    <p class="card-text"><input type="radio" style="margin: 5px;"> logos tarjetas </p>
-                    <p class="card-text"><small>N&uacute;mero de tarjeta </small><br> <input type="text" class="form-control" style="width: 200px;"></p>
-                    <p class="card-text"><small>Fecha de vencimiento </small><br> <input type="month" name="fecha" id="fecha" class="form-control" value="2023-01" style="width: 200px;"></p>
-                    <p class="card-text"><small>codigo de seguridad tarjeta </small><br> <input type="password" class="form-control" style="width: 200px;" max="3"></p>
+                    <p class="card-text" style="margin: 5px;">Tarjeta de Debito / Credito</p>
+                    <p class="card-text"><input id="tarjetas" type="radio" style="margin: 5px;" onclick="mostrarCamposTarjeta()"> <img style="width: 60px; padding: 5px;" src="../img/tarjetas.png" alt="tarjetas"></p>
+                    <div id="camposTarjeta" style="display: none; margin: 15px;">
+                        <p class="card-text"><small>N&uacute;mero de tarjeta </small><br> <input type="text" class="form-control" style="width: 200px;"></p>
+                        <p class="card-text"><small>Fecha de vencimiento </small><br> <input type="month" name="fecha" id="fecha" class="form-control" value="2023-01" style="width: 200px;"></p>
+                        <p class="card-text"><small>codigo de seguridad tarjeta </small><br> <input type="password" class="form-control" style="width: 200px;" max="3"></p>
+                    </div>
+                </div>
+                <div class="card" style="width: 30rem; margin-top: 5px;">
+                    <p class="card-text" style="margin: 5px;">PSE</p>
+                    <p class="card-text"><input id="pse" type="radio" style="margin: 5px;" onclick="mostrarSelectBancos()"> <img style="width: 60px; padding: 5px;" src="../img/logoPSE.png" alt="tarjetas"></p>
+                    <div id="divSelectBancos" style="display: none; margin: 15px;">
+                        <p class="card-text"><small>Seleccione </small><br> 
+                            <select class="form-control" id="selectBancos">
+                                <option>Bancolombia</option>
+                                <option>Davivienda</option>
+                                <option>Banco de Bogota</option>
+                                <option>Banco Caja social</option>
+                            </select>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div style="margin: 10px;">
