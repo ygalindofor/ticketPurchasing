@@ -1,13 +1,19 @@
 function obtenerValorEspectaculo(){
     let valorEspectaculo = 0;
     let espActual = localStorage.getItem("espActual");
+    let nombEspectaculo = document.getElementById("nombEsp");
+    let descEspectaculo = document.getElementById("descEsp");
 
     switch (espActual) {
         case 'esp1':
             valorEspectaculo = parseInt(localStorage.getItem("espectaculo1"), 10);
+            nombEspectaculo.innerHTML = localStorage.getItem("nombEspectaculo1");
+            descEspectaculo.innerHTML = localStorage.getItem("descEspectaculo1");
           break;
         case 'esp2':
             valorEspectaculo = parseInt(localStorage.getItem("espectaculo2"), 10);
+            nombEspectaculo.innerHTML = localStorage.getItem("nombEspectaculo2");
+            descEspectaculo.innerHTML = localStorage.getItem("descEspectaculo2");
           break;
         case 'esp3':
             valorEspectaculo = parseInt(localStorage.getItem("espectaculo3"), 10);

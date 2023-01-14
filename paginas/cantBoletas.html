@@ -11,8 +11,8 @@
     <div>
         <div class="card cardd" style="width: 40rem;">
             <div class="card-body">
-                <h5 class="card-title">Nomb espectaculo</h5>
-                <p class="card-text">Descripción espectaculo</p>
+                <h5 class="card-title" id="nombEsp">Nomb espectaculo</h5>
+                <p class="card-text" id="descEsp">Descripción espectaculo</p>
             </div>
             <div class="card-body">
                 <p>Seleccione cantidad de boletas</p>
@@ -23,10 +23,10 @@
             <div class="card-body">
                 $<input id="txtPrecio" value="0" type="text" class="txtPrecio" readonly onmousedown="return false;"/>
             </div>
-        </div>
-        <div>
-            <button class="btn btn-primary" onclick="pagar()">Pagar</button>
-            <button class="btn btn-success" onclick="volver()">Volver</button>
+            <div style="margin: 20px;">
+                <button class="btn btn-primary" onclick="pagar()">Pagar</button>
+                <button class="btn btn-success" onclick="volver()">Volver</button>
+            </div>
         </div>
     </div>
 </body>
