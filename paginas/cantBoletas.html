@@ -7,23 +7,27 @@
         <link rel="stylesheet" href="../CSS/cantBoletas.css">
         <script src="../JS/cantBoletas.js"></script>
     </head>
-<body onload="cambiarPrecio();">
-    <div class="titlesCantBoletas">
-        <h1>Nomb espectaculo</h1>
-        <p>Descripción espectaculo</p>
-        <p>Precio espectaculo</p>
-        <p>Seleccione cantidad de boletas</p>
-        <button class="btn btn-light btn-circle btn-sm" onclick="masCant()">+</button>
-        <input id="txtNumCant" type="text" class="numCant" value="1" min="1" readonly onmousedown="return false;"/>
-        <button class="btn btn-light btn-circle btn-sm" onclick="menosCant()">-</button>
-    </div>
-
+<body onload="cambiarPrecio();" class="m-0 row justify-content-center">
     <div>
-        $<input id="txtPrecio" value="0" type="text" class="txtPrecio" readonly onmousedown="return false;"/>
-    </div>
-
-    <div>
-        <button class="btn btn-success" onclick="volver()">Volver</button>
+        <div class="card cardd" style="width: 40rem;">
+            <div class="card-body">
+                <h5 class="card-title">Nomb espectaculo</h5>
+                <p class="card-text">Descripción espectaculo</p>
+            </div>
+            <div class="card-body">
+                <p>Seleccione cantidad de boletas</p>
+                <button class="btn btn-light btn-circle btn-sm" onclick="masCant()">+</button>
+                <input id="txtNumCant" type="text" class="numCant" value="1" min="1" readonly onmousedown="return false;"/>
+                <button class="btn btn-light btn-circle btn-sm" onclick="menosCant()">-</button>
+            </div>
+            <div class="card-body">
+                $<input id="txtPrecio" value="0" type="text" class="txtPrecio" readonly onmousedown="return false;"/>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-primary" onclick="pagar()">Pagar</button>
+            <button class="btn btn-success" onclick="volver()">Volver</button>
+        </div>
     </div>
 </body>
 </html>
