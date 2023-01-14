@@ -1,0 +1,15 @@
+.cardd {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #d2d2d2;
+    margin: 20px;
+}
+
+.groupCardd {
+    display: flex;
+    margin-left: 12%;
+}
+
+.titlesIndex {
+    text-align: center;
+}

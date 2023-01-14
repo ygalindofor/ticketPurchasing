@@ -1,0 +1,22 @@
+.titlesCantBoletas {
+
+}
+
+.btn-circle.btn-sm {
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 15px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.numCant {
+    max-width: 20px;
+    border: none;
+    margin-left: 5px;
+}
+
+.txtPrecio {
+    border: none;
+}
