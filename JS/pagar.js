@@ -26,3 +26,14 @@ function mostrarSelectBancos(){
     document.getElementById("camposTarjeta").style.display = "none";
     document.getElementById("tarjetas").checked = false;
 }
+
+function aceptar(){
+    //Validacion de info
+    if(document.getElementById("tarjetas").checked == true || document.getElementById("pse").checked == true){
+        document.getElementById("pagoExit").style.display = 'block';
+        document.getElementById("valTipoPago").style.display = 'none';
+    }else {
+        document.getElementById("valTipoPago").style.display = 'block';
+        document.getElementById("pagoExit").style.display = 'none';
+    }
+}
