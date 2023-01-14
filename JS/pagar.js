@@ -12,12 +12,16 @@ function cancelar(){
 }
 
 function mostrarCamposTarjeta(){
+    document.getElementById("divTarjetas").style.background = '#EBF5FB';
+    document.getElementById("divBancos").style.background = '';
     document.getElementById("camposTarjeta").style.display = "block";
     document.getElementById("divSelectBancos").style.display = "none";
     document.getElementById("pse").checked = false;
 }
 
 function mostrarSelectBancos(){
+    document.getElementById("divBancos").style.background = '#EBF5FB';
+    document.getElementById("divTarjetas").style.background = '';
     document.getElementById("divSelectBancos").style.display = "block";
     document.getElementById("camposTarjeta").style.display = "none";
     document.getElementById("tarjetas").checked = false;
